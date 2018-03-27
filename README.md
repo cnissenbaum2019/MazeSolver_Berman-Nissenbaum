@@ -1,4 +1,4 @@
-# MazeSolver_CooperWill
+# MazeSolver_Berman-Nissenbaum
 Solves Mazes
 
 Statement of the Problem:
