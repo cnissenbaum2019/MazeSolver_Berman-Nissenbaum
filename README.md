@@ -1,17 +1,5 @@
 # MazeSolver_Berman-Nissenbaum
 
-Possible Algorithm:
-In order to make your way through a maze, every time you
-come to an intersection, you make a right turn. If
-you reach a dead end or return to a previous location and
-orientation, you backtrack to the last intersection. If it's
-a three-way intersection, go forward, following the same 
-rules you followed after turning right. If it's a two-way 
-intersection, or if you have already gone right and forward,
-go left and follow the same rules again. If all directions
-of the intersection have been exhausted, treat the intersection
-as if it were a dead end. Once you reach the treasure, stop.
-
 ## personnel
 William Berman and Cooper Nissenbaum
 
@@ -28,6 +16,17 @@ If the current position is the position of the ending point, then terminate the 
 
 ## English or pseudocode description of algorithm
 
+In order to make your way through a maze, every time you
+come to an intersection*, you make a right turn. If there
+is no right turn to make, go straight. If
+you reach a dead end or return to a previous location and
+orientation, backtrack to the last intersection. If all directions
+of the intersection have been exhausted, treat the intersection
+as if it were a dead end. Once you reach the treasure, stop.
+
+*An intersection is any branching portion of the path, where 
+there are two possible ways to travel it does not include a 
+left-turn or right-turn
 
 ## class(es), with fields and methods
 
