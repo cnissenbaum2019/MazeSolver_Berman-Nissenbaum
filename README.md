@@ -2,10 +2,15 @@
 
 Possible Algorithm:
 In order to make your way through a maze, every time you
-come to a two-way intersection, you make a right turn. If
+come to an intersection, you make a right turn. If
 you reach a dead end or return to a previous location and
-orientation, you backtrack to the last intersection and turn
-left instead.
+orientation, you backtrack to the last intersection. If it's
+a three-way intersection, go forward, following the same 
+rules you followed after turning right. If it's a two-way 
+intersection, or if you have already gone right and forward,
+go left and follow the same rules again. If all directions
+of the intersection have been exhausted, treat the intersection
+as if it were a dead end. Once you reach the treasure, stop.
 
 ## personnel
 William Berman and Cooper Nissenbaum
