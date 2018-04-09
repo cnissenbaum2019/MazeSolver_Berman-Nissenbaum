@@ -29,7 +29,9 @@ left-turn or right-turn
 
 ## class(es), with fields and methods
 Displayer class: 
+
 Maze class:
+
 UserOfMaze class:
 
 ## version0 wish list
