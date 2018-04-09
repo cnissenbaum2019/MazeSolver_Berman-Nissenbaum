@@ -35,9 +35,18 @@ Displayer class:
 
 Maze class:
 
-  fields: treasure, explorer, path
+  fields: TREASURE, WALL, STEPPING_STONE, (cardinal directions), maze, MAX_RANKS, rankCount, explorerPosition
+  methods: constructors, toString, go, explorerIsOnA
+  
+  Vector class (within maze class): 
+  
+    fields: rank, file
+    methods: constructors, add, equals
 
 UserOfMaze class:
+
+  fields: displayer
+  methods: main, moveTest, dropTest, copyConstructTest, displayerTest, snapshotDemo
 
 ## version0 wish list
 
