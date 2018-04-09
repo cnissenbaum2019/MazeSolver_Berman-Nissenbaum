@@ -50,3 +50,4 @@ UserOfMaze class:
 
 ## version0 wish list
 
+
