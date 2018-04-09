@@ -8,8 +8,7 @@ Return a boolean representing the following statement:
 "This maze is navigable."
 
 ## recursive abstraction
-The recursive abstraction solves the maze with an already exhausted
-portion removed.
+The recursive abstraction solves the maze with a new explorer positioning.
 
 ## base case
 If the current position is the position of the ending point, then terminate the path here.
