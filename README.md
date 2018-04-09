@@ -28,7 +28,9 @@ there are two possible ways to travel it does not include a
 left-turn or right-turn
 
 ## class(es), with fields and methods
-
+Displayer class: 
+Maze class:
+UserOfMaze class:
 
 ## version0 wish list
 
