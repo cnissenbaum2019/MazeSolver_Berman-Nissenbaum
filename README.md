@@ -30,7 +30,12 @@ left-turn or right-turn
 ## class(es), with fields and methods
 Displayer class: 
 
+  fields: windowheight, console
+  methods: constructor, atTopOfWindow
+
 Maze class:
+
+  fields: treasure, explorer, path
 
 UserOfMaze class:
 
