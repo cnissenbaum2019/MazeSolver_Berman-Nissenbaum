@@ -30,23 +30,23 @@ left-turn or right-turn
 ## class(es), with fields and methods
 Displayer class: 
 
-  fields: windowheight, console
-  methods: constructor, atTopOfWindow
+    fields: windowheight, console
+    methods: constructor, atTopOfWindow
 
 Maze class:
 
-  fields: TREASURE, WALL, STEPPING_STONE, (cardinal directions), maze, MAX_RANKS, rankCount, explorerPosition
-  methods: constructors, toString, go, explorerIsOnA
+    fields: TREASURE, WALL, STEPPING_STONE, (cardinal directions), maze, MAX_RANKS, rankCount, explorerPosition
+    methods: constructors, toString, go, explorerIsOnA
   
-  Vector class (within maze class): 
+Vector class (within maze class): 
   
     fields: rank, file
     methods: constructors, add, equals
 
 UserOfMaze class:
 
-  fields: displayer
-  methods: main, moveTest, dropTest, copyConstructTest, displayerTest, snapshotDemo
+    fields: displayer
+    methods: main, moveTest, dropTest, copyConstructTest, displayerTest, snapshotDemo
 
 ## version0 wish list
 
