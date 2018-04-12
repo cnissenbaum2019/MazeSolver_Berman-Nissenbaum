@@ -12,8 +12,9 @@
 public class UserOfMaze {
     private static Displayer displayer;
 
-    public static void main(String[] commandLine)
-       throws java.io.FileNotFoundException {
+    public static void main(String[] commandLine) throws java.io.FileNotFoundException {
+       //throws java.io.FileNotFoundException 
+
         System.out.println();
 
         Maze maze = new Maze( commandLine[0]
@@ -25,8 +26,8 @@ public class UserOfMaze {
         // moveTest( maze);
         // dropTest( maze);
 
-        // copyConstructTest( maze);
-
+        copyConstructTest(maze);
+ 
         // // test Displayer
         // displayer = new Displayer( Integer.parseInt( commandLine[3]));
         // displayerTest( maze);
@@ -118,7 +119,7 @@ public class UserOfMaze {
 
         // change the copy
         copy.go( Maze.SOUTH);
-        copy.go( Maze.WEST);
+        copy.go( Maze.EAST);
         copy.dropA( Maze.STEPPING_STONE);
         System.out.println(
                             "modified copy" + System.lineSeparator()

@@ -75,9 +75,9 @@ public class Maze {
         }
         
         explorerPosition = new Vector().add( explorerRank, explorerFile);
-        // // for debugging: report explorer's location
-        // System.out.println( "explorer at " + explorerPosition.rank
-                          // + ", " +           explorerPosition.file);
+        // for debugging: report explorer's location
+        System.out.println( "explorer at " + explorerPosition.rank
+                          + ", " +           explorerPosition.file);
     }
 
 
@@ -87,11 +87,25 @@ public class Maze {
      */
     public Maze( Maze old) {
 
-        // Copy the explorer's position (code by Holmes is asserted to work)
+
         explorerPosition = new Vector( old.explorerPosition);
 
-        throw new java.lang.RuntimeException(
-            "Write code to copy the maze[][] array and rankCount.");
+        //initialize new maze lengths
+        maze = new int[old.rankCount][old.maze[0].length];
+
+        //clone old maze to new maze
+        for (int rank = 0; rank < old.rankCount; rank++) {
+          //System.out.println(old.maze[0].length);
+          for (int file = 0; file < old.maze[0].length; file++) {
+            maze[rank][file] = old.maze[rank][file];
+          }
+        }
+
+        //copy rank count
+        rankCount = old.rankCount;
+
+        //throw new java.lang.RuntimeException(
+        //    "Write code to copy the maze[][] array and rankCount.");
     }
 
 
@@ -164,7 +178,7 @@ public class Maze {
      */
     public void dropA( int mazeElement) {
         if( mazeElement != TREASURE)
-            maze[ explorerPosition.rank][ explorerPosition.file] = mazeElement;
+            maze[explorerPosition.rank][explorerPosition.file] = mazeElement;
     }
 
 
