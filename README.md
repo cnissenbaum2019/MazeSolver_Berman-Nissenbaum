@@ -51,3 +51,7 @@ UserOfMaze class:
 ## version0 wish list
 
 It works
+
+## version0 bug list
+
+Can only solve mazes where the treasure is exactly EAST of the explorer and there are stone inbetween
