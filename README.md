@@ -54,4 +54,5 @@ It works
 
 ## version0 bug list
 
-Can only solve mazes where the treasure is exactly EAST of the explorer and there are stone inbetween
+Returns false for empty maze, but is followed by error message.
+Doesn't come out of the solve with an unchanged maze (some stepping stones dropped along the way)
