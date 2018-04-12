@@ -29,11 +29,11 @@ public class Maze {
           in the unlikely event that we ever want to add north-west, etc.:
           2+4 --> 6  */
     
-    private int[][] maze;
+    public int[][] maze;
     private final static int MAX_RANKS = 64;
-    private int rankCount;  // number of ranks in a constructed Maze
+    public int rankCount;  // number of ranks in a constructed Maze
     
-    private Vector explorerPosition;  // see Vector inner class, below
+    public Vector explorerPosition;  // see Vector inner class, below
 
     /**
       Construct an instance from the contents of a file.
@@ -76,8 +76,8 @@ public class Maze {
         
         explorerPosition = new Vector().add( explorerRank, explorerFile);
         // for debugging: report explorer's location
-        System.out.println( "explorer at " + explorerPosition.rank
-                          + ", " +           explorerPosition.file);
+        //System.out.println( "explorer at " + explorerPosition.rank
+        //                  + ", " +           explorerPosition.file);
     }
 
 

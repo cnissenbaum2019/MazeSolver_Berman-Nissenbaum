@@ -2,7 +2,6 @@ public class UserOfMazeSolver{
 
 	public static void main(String[] commandLine) throws java.io.FileNotFoundException {
 
-		//10x10 maze
 		Maze myMaze = new Maze( commandLine[0]
                             , Integer.parseInt( commandLine[1])
                             , Integer.parseInt( commandLine[2])
@@ -10,8 +9,9 @@ public class UserOfMazeSolver{
 
 		MazeSolver IWantMySolverTo = new MazeSolver();
 
-		//System.out.println(IWantMySolverTo.solve(myMaze));
-		IWantMySolverTo.solve(myMaze);
+		//VERY PROUD OF MY NAMING CONVENTIONS
+		System.out.println(IWantMySolverTo.solve(myMaze));
+		
 
 		System.out.println(myMaze);
 
