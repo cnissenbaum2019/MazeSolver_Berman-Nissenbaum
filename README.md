@@ -16,16 +16,13 @@ If the current position is the position of the ending point, then terminate the 
 ## English or pseudocode description of algorithm
 
 In order to make your way through a maze, every time you
-come to an intersection*, you make a right turn. If there
-is no right turn to make, go straight. If
-you reach a dead end or return to a previous location and
-orientation, backtrack to the last intersection. If all directions
-of the intersection have been exhausted, treat the intersection
-as if it were a dead end. Once you reach the treasure, stop.
-
-*An intersection is any branching portion of the path, where 
-there are two possible ways to travel it does not include a 
-left-turn or right-turn
+move, you first take a snapshot to return to later. 
+Then, you first attempt to move west. If you cannot, go north. If
+you cannot, go east. If you cannot, go south. Each time you move,
+drop a wall in the previously occupied square to avoid revisiting
+If you reach a state where you cannot move, bactrack to the snapshot
+until you can move in a different direction.
+Once you reach the treasure, stop.
 
 ## class(es), with fields and methods
 Displayer class: 
