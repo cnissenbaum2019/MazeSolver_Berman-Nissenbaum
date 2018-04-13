@@ -7,21 +7,17 @@ public class MazeSolver {
 
 	//Fields
 	// MazeTerminal named constants
-    public final static int TREASURE = 0;
-    public final static int WALL = 1;
-    public final static int STEPPING_STONE = 2;
+        public final static int TREASURE = 0;
+        public final static int WALL = 1;
+        public final static int STEPPING_STONE = 2;
     
-    // directions that can be searched
-    public final static int EAST =  1;
-    public final static int NORTH = 2;
-    public final static int WEST =  4;
-    public final static int SOUTH = 8;
-       /* Values are pretty arbitrary. Values of 2^n might be useful
-          in the unlikely event that we ever want to add north-west, etc.:
-          2+4 --> 6  */
-    //private Maze snapshot;
+        // directions that can be searched
+        public static int[] DIRECTIONS = {Maze.EAST,
+				      Maze.NORTH,
+				      Maze.WEST,
+				      Maze.SOUTH};
 
-	//Constructors
+	//Constructors -N/A
 
 	//Methods
 	public boolean solve(Maze mazeToBeSolved) {
@@ -44,13 +40,13 @@ public class MazeSolver {
 
 			//Move and Test every direction (whether or not there is a WALL)
 			//EAST,NORTH,WEST,SOUTH
-			for(int n = 1; n < 9; n = n*2) {
+			for(int dir: DIRECTIONS) {
 
 				//Change current stone to a WALL so explorer does not end up back here
 				mazeToBeSolved.dropA(WALL);
 
 				//move the explorer in given direction
-				mazeToBeSolved.go(n);
+				mazeToBeSolved.go(dir);
 
 				//System.out.println(mazeToBeSolved);
 				
