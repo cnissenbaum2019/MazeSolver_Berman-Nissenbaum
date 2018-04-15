@@ -53,3 +53,11 @@ It works
 
 Returns false for empty maze, but is followed by error message.
 Doesn't come out of the solve with an unchanged maze (some stepping stones dropped along the way)
+
+## v1
+
+Returns false for empty maze, no error message.
+
+## v1 bug list
+
+Doesn't come out of the solve with an unchanged maze (some stepping stones dropped along the way)
